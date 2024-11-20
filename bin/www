@@ -18,8 +18,8 @@ const binance = require('node-binance-api-modified-futures')().options({
  * These params are optional that sets which one of Symbols or all Symbol from "app.udf.allSymbols".
  * Please pay attention that some Symbols for Futures market are different from Spot market.
  */
-var symbolArrayFutures = ["BTCUSDT", "ETHUSDT"]
-var symbolArraySpot = ["BTCUSDT", "ETHUSDT"]
+var symbolArrayFutures = ["BTCUSDT", "ETHUSDT", "SOLUSDT"]
+var symbolArraySpot = ["BTCUSDT", "ETHUSDT", "SOLUSDT"]
 
 // '360': '6h',
 //     '480': '8h',

@@ -39,7 +39,7 @@ router.get('/history', [
  * @apiVersion 1.0.0
  * @apiGroup Api
  */
-router.get('/config', (req, res, next) => {
+router.get('/time', (req, res, next) => {
     const time = Math.floor(Date.now() / 1000)  // In seconds
     res.set('Content-Type', 'text/plain').send(time.toString())
 })
@@ -50,7 +50,7 @@ router.get('/config', (req, res, next) => {
  * @apiVersion 1.0.0
  * @apiGroup Api
  */
-router.get('/time', (req, res, next) => {
+router.get('/config', (req, res, next) => {
     return res.udf.config().then((result) => {
         res.send(result)
     }).catch(function (err) {

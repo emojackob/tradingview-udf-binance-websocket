@@ -22,7 +22,7 @@ var symbolArrayFutures = ["BTCUSDT", "ETHUSDT"]
 var symbolArraySpot = ["BTCUSDT", "ETHUSDT"]
 
 // This is optional that means you can set specific resolutions of all resolutions from "app.udf.resolutions".
-var resolutions = [15, 30, 60, 120, 240]
+var resolutions = [1,3,5,10,15, 30, 60, 120, 240]
 
 if (marketType === "futures") {
     app.udf.getWebSocketSymbolFuturesData(binance, symbolArrayFutures, resolutions)
